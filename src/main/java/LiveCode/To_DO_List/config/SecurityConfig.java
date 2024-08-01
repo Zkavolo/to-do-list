@@ -25,6 +25,7 @@ public class SecurityConfig {
                 .csrf().disable()
                 .authorizeHttpRequests(auth -> auth
                         // Public endpoints
+                        .requestMatchers("/api/admin/super-admin").permitAll()
                         .requestMatchers("/api/auth/**").permitAll()
 //                        .anyRequest().permitAll()
                         .anyRequest().authenticated()

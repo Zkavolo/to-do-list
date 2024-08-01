@@ -16,4 +16,6 @@ public class UserMiddleWare {
     public static void isDoctor(Role role) {
         if (role != Role.User) throw new ValidateException("Invalid Role!");
     }
+
+    public static void isSuperAdmin(Role role) {if (role != Role.Super_Admin) throw new ValidateException("Invalid Role!");}
 }

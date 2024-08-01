@@ -18,7 +18,7 @@ public class GlobalExceptionHandler {
             message = "Task not found";
         } else if(ex.getMessage().contains("regisPass")){
             message = "Email already taken";
-        } else if(ex.getMessage().contains("name")){
+        } else if(ex.getMessage().contains("Name")){
             message = "Wrong username or password";
         } else if (ex.getMessage().contains("regisUser")) {
             message = "Username already taken";
